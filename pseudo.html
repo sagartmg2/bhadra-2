@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            text-align: center;
+            height: 100px;
+            width: 200px;
+            border: 1px solid;
+            font-size: 2rem;
+        }
+
+        .boxes :first-child {
+            background-color: red;
+        }
+
+        .box:last-child {
+            background-color: red;
+        }
+
+        .boxes :nth-child(2) {
+            background-color: orange;
+        }
+
+        .box:nth-child(4) {
+            background-color: orange;
+        }
+
+        .numbers {
+            font-size: 2rem;
+        }
+        /* .numbers :nth-child(2){
+            color: red;
+        }
+        .numbers :nth-child(3){
+            color: red;
+        }
+        .numbers :nth-child(4){
+            color: red;
+        } */
+
+        .numbers :not(:first-child){
+            color: red;
+        }
+
+        .numbers :not(.first){
+            text-decoration: underline;
+        }
+
+        header{
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+
+        header a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* :foucs :disabled :active */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a>home</a>
+        <a>about </a>
+        <a>contact</a>
+    </header>
+    <h1>Pseudo class</h1>
+
+    <div class="boxes">
+        <div class="box first">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+    </div>
+
+    <ul class="numbers">
+        <li class="first">one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+
+</body>
+
+</html>

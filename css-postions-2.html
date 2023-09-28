@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            font-size: 2rem;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            left: 100px;
+        }
+
+        .absolute {
+            background-color: darkblue;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /* .fixed {
+            position: fixed;
+        } */
+
+        /* .sticky {
+            position: sticky;
+        } */
+
+        .projects{
+            border: 1px solid;
+            display: flex;
+            gap: 2rem;
+            position: relative;
+            padding: 2rem;
+        }
+        .project{
+            background-color: rgba(0, 0, 0, 0.307);
+            height: 200px;
+            flex-grow: 1;
+            position: relative;
+        }
+        /* .project:nth-child(1){
+            flex-grow: 3;
+        }
+        .project:nth-child(2){
+            flex-grow: 1;
+        } */
+
+        .project button{
+            background-color: black;
+            border: none;
+            padding: 1rem;
+            height: 50px;
+            width: 50px;
+            border-radius: 99999px;
+            cursor: pointer;
+            position: absolute;
+            right: -25px;
+            top:-25px
+        }
+
+        header{
+            height: 50px;
+            border: 1px solid gold;
+            background-color: gold;
+            position: sticky;
+            top: 0px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        header
+    </header>
+
+    <div class="box static">static</div>
+    <div class="box relative">relative</div>
+    <div class="box absolute">absolute</div>
+    <div class="box fixed">fixed</div>
+    <div class="box sticky">sticky</div>
+
+    <hr>
+    <h1>Projects</h1>
+    <div class="projects">
+        <div class="project box">
+            project-1
+            <button>X</button>
+            edit button
+        </div>
+        <div class="project box">
+            project-1
+            <button>X</button>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente facilis repellat distinctio laudantium quibusdam dicta illum voluptas, molestias, ut, possimus quasi. Explicabo, ut natus. Soluta dolores nulla a tenetur.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* comment - ctrl + / */
+    /* css syntax
+            <selector> {
+                <css-property> : <css-value>;
+            }
+
+            selector
+                - tags / element
+                - class
+                - id 
+    */
+
+    body{
+        background-color: antiquewhite;
+    }
+
+    h1{
+        color:red;
+        text-transform: uppercase;
+        border: 1px solid;
+        display: inline;
+    }
+
+    /* combination of selectors 
+    descendent selector */
+    nav li{
+        display: inline;
+        color: red;
+    }
+
+    /* p{
+        color: red;
+    } */
+
+    #text-red{
+        color:red;
+    }
+
+    .font-bold{
+        font-weight: bold;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th,td{
+        border: 1px solid;
+        padding: 10px;
+    }
+    .border{
+        border: 1px solid;
+    }
+
+    .box{
+        border: 1px solid;
+        padding: 16px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+
+    }
+   
+
+
+  
+
+    </style>
+</head>
+
+<body>
+    <!-- 
+        paths
+            realtive path   
+                ./courses.html
+                ./courses/python.html
+
+                ./
+                ../
+
+            absolute path
+                C:/Users/User/Desktop/Bhadra/courses.html
+                https://www.youtube.com/
+
+     -->
+    <header>
+        <nav>
+            <ul>
+                <li style="display: inline;" class="font-bold">
+                    <a href="./courses.html">courses</a>
+                    <span>list</span>
+                </li>
+                <li><a href="./courses/upcomming/data-science.html">data science</a></li>
+                <li><a href="./courses/upcomming/qa.html">QA</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- <a href="C:/Users/User/Desktop/Bhadra/courses.html">courses</a> -->
+
+    <h1 class="" style="text-align: center;">Web Development</h1>
+    <p id="text-red"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, soluta architecto enim at, rerum eveniet
+        numquam ullam veniam cupiditate quos illo nihil molestiae sunt error esse doloribus. Pariatur, atque maiores.
+    </p>
+    <p>samll one</p>
+    <p class="font-bold">samll two</p>
+    <p>samll third</p>
+
+    <!-- comments   ctrl + / -->
+    <!--
+        We should not use more than one <h1> tag in a page
+         <h1>html</h1>
+      -->
+
+    <h2>HTML</h2>
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. At cum minima nihil placeat temporibus! Aperiam quam
+        obcaecati nisi non similique excepturi qui inventore iure, error itaque voluptatibus dignissimos fugiat velit!
+    </p>
+    <h3>Table</h3>
+    <table >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ram</td>
+                <td>ram@gmail.com</td>
+            </tr>
+            <tr>
+                <td>shyam</td>
+                <td>shyam@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>price</th>
+                <th>qty</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mouse</td>
+                <td>1000</td>
+                <td>1</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>keyboard</td>
+                <td>2000</td>
+                <td>2</td>
+                <td>4000</td>
+            </tr>
+            <tr class="font-bold">
+                <td colspan="3" style="text-align: center; ">total</td>
+                <td style="">5000</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" width="200">name</th>
+                <th rowspan="2" width="10">email</th>
+            </tr>
+            <tr>
+                <th>first</th>
+                <th>last</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>hari</td>
+                <td>bdr</td>
+                <td>h@h.com</td>
+            </tr>
+            <tr>
+                <td>ram</td>
+                <td>bdr</td>
+                <td>hari @hari..com</td>
+            </tr>
+            <tr>
+                <td>shyram</td>
+                <td>bdr</td>
+                <td>h@h.com</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <img src="https://wpassets.brainstation.io/app/uploads/2021/10/24135334/Web-Dev.jpg" height="150" alt="">
+
+
+    <a target="_blank"
+        href="https://www.google.com/search?q=git&oq=git&gs_lcrp=EgZjaHJvbWUyCwgAEEUYJxg5GIoFMgkIARAjGCcYigUyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDwyBggFEEUYQTIGCAYQRRg8MgYIBxBFGEHSAQgyNzQzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI_K8fSZ2O-T9u0DnD_7MPC44S59Hhm06y4xxJGnY8-ZzpE8b0ZC65pAew2YdO-HdLB8M&usqp=CAU"
+            width="200" alt="">
+
+    </a>
+
+    <h2>Css</h2>
+    <ul>
+        <li>exteranl</li>
+        <li>internal</li>
+        <li style=" color: red;">inline</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At cum minima nihil placeat temporibus! Aperiam quam
+        obcaecati nisi non similique excepturi qui inventore iure, error itaque voluptatibus dignissimos fugiat velit!
+    </p>
+    <h3>Selector</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, corrupti labore </p>
+    <h3>Typography</h3>
+    <p class="box">Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi in dolorum veritatis, architecto autem voluptatem minus accusamus. Libero, facere quidem consectetur officia aliquid quod ut molestias, amet quis totam dolorem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi in dolorum veritatis, architecto autem voluptatem minus accusamus. Libero, facere quidem consectetur officia aliquid quod ut molestias, amet quis totam dolorem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi in dolorum veritatis, architecto autem voluptatem minus accusamus. Libero, facere quidem consectetur officia aliquid quod ut molestias, amet quis totam dolorem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi in dolorum veritatis, architecto autem voluptatem minus accusamus. Libero, facere quidem consectetur officia aliquid quod ut molestias, amet quis totam dolorem.
+         ipsum dolor sit amet consectetur adipisicing elit. Debitis, corrupti labore </p>
+
+    <hr>
+    <ul></ul>
+
+    <footer>
+        <a target="_blank" href="https://www.youtube.com/">youtube</a>
+    </footer>
+
+
+</body>
+
+</html>

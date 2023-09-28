@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            font-size: 2rem;
+        }
+
+        .static {
+            /* default position  */
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            /* margin-top: 2rem; */
+            top: 50px;
+            /* margin-left: 2rem; */
+            left: 100px
+            /* right: 50px; */
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0px;
+            /* left: 50px; */
+            right: 0px;
+            background-color: red;
+        }
+
+        .fixed {
+            position: fixed;
+            background-color: orange;
+            top: 0px;
+            /* left: 50px; */
+            left: 0px
+        }
+
+        /* .sticky {
+            position: sticky;
+        } */
+        p{
+            width: 10px;
+        }
+
+
+        header{
+            height: 50px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit modi consequatur, unde voluptatum vel, repellat, assumenda fugiat beatae facere incidunt nobis labore quibusdam porro quaerat dolores omnis non ab nemo!</p>
+    <header></header>
+    <h1>css positions  ( only changes its position unline margin)</h1>
+    <hr>
+    <div class="box static">static</div>
+    <div class="box relative">relative</div>
+    <div class="box absolute">absolute</div>
+    <div class="box fixed">fixed</div>
+    <div class="box sticky">sticky</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expeditpsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio numquam dignissimos, doloremque quod quidem, accusamus expedita placeat et sunt sapiente dolorem harum id. Veniam ex quod nulla ut?</p>
+</body>
+
+</html>

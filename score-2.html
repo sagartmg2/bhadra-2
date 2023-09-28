@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* code here.. */
+
+        body .heading {
+            color: white;
+        }
+
+        body h1 {
+            color: red;
+        }
+
+        h1 {
+            color: red;
+            color: orange;
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        .heading {
+            color: rgb(237, 237, 65)
+        }
+
+        #heading-one {
+            color: orange;
+        }
+
+        /* 011 */
+        body .box {
+            background-color: cyan;
+        }
+
+        /* 002 */
+        body div {
+            background-color: orange !important;
+        }
+
+        /*  id class tag */
+        /* 001 */
+        div {
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        /* 001 */
+        div {
+            background-color: gold !important;
+        }
+
+        /* 011 */
+        body .box {
+            background-color: orange;
+        }
+
+        /* 1 0 2 */
+        body div#container {
+            background-color: gold;
+        }
+
+        /* 1 0 1 */
+        div#container {
+            background-color: white;
+        }
+
+        /* 1 0 0 */
+        #container {
+            background-color: black;
+        }
+
+        /* 113 */
+        html body div.box#container {
+            background-color: gold;
+        }
+
+        /* 1 2 0   */
+        .box.rounded#container {
+            background-color: red !important;
+        }
+
+        /* 1 1 3 */
+        html body div.box#container {
+            background-color: black !important;
+        }
+
+        /* 1 1 1  */
+        body .box#container {
+            background-color: red !important;
+        }
+
+        .rounded {
+            border-radius: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading" id="heading-one">specificity score in css id > class > tag </h1>
+
+    <div class="box rounded" id="container" style="background-color: black;">
+        box
+    </div>
+
+</body>
+
+</html>
