@@ -14,3 +14,20 @@
 3. git commit -m "hint/message"
 4. git push
 
+
+
+<!-- to pull codes -->
+    git pull   NOTE: there should not be changes left to commit
+               Beware of merge confitscts..
+
+
+<!-- branches -->
+    usually created for new features]
+
+    git branch   // view current branch we are in 
+    git branch -r  // view remote / online branches
+    git fetch // to sync  // sync number of commits,   branches
+
+    git checkout -b auth // to create new branch
+    git checkout <branch_name>
+
