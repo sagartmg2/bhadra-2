@@ -28,6 +28,11 @@
     git branch -r  // view remote / online branches
     git fetch // to sync  // sync number of commits,   branches
 
-    git checkout -b auth // to create new branch
-    git checkout <branch_name>
+    git checkout -b <new_branchname> // to create new branch  // eg eg: git checkout -b auth
+    git checkout <branch_name>  // to switch between branches // eg: git checkout auth
+                                                                    git checkout master
+
+   git merge <branch_name>                                                                    
+        eg: git merge layout
+            git merge auth
 
