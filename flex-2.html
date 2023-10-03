@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flexbox {
+            background-color: antiquewhite;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flex-item {
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+        }
+
+        .parent {
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* gap: 1rem;
+            flex-wrap: wrap; */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        header input {
+            width: 300px;
+        }
+
+        .gap-2{
+            gap:2rem
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>flex box</h1>
+
+    <div class="flexbox">
+        <!--   
+
+            .flex-item*10>{flex-item-$}
+
+         -->
+        <div class="flex-item">flex-item-1</div>
+        <div class="flex-item">flex-item-2</div>
+        <div class="flex-item">flex-item-3</div>
+        <div class="flex-item">flex-item-4</div>
+        <div class="flex-item">flex-item-5</div>
+        <div class="flex-item">flex-item-6</div>
+        <div class="flex-item">flex-item-7</div>
+        <div class="flex-item">flex-item-8</div>
+        <!-- <div class="flex-item">flex-item-9</div>
+       <div class="flex-item">flex-item-10</div> -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde in earum nulla! Eaque sint sed beatae at quod cum
+        odio dolore, quisquam reiciendis fuga, ea voluptatum non. Labore, laboriosam at!</p>
+
+    <div class="parent">
+        <div class="child flex-item">
+            child
+        </div>
+        <div class="child flex-item">
+            child
+        </div>
+
+    </div>
+
+    <header>
+        <div class="flex gap-2">
+            <p>logo</p>
+            <input type="search">
+        </div>
+        <button>setting</button>
+    </header>
+
+</body>
+
+</html>
