@@ -19,10 +19,16 @@
             <p class="logo-text"><span>Lasles</span><span class="font-bold">VPN</span></p>
         </div>
 
-        <img src="./assets/images/menu.svg" alt="" class="hamburger-icon">
+        <img 
+        onclick='  document.getElementById("sidebar").classList.add("active") ' src="./assets/images/menu.svg"
+            alt="" class="hamburger-icon">
 
-        <div class="sidebar">
-            <ul>
+        <div class="sidebar" id="sidebar">
+            <button
+            class="close-icon"
+            onclick='  document.getElementById("sidebar").classList.remove("active") '
+            > X </button>
+            <ul class="nav-links">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
@@ -30,9 +36,9 @@
                 <li><a href="#">Help</a></li>
             </ul>
 
-            <ul>
-                <li><button>Sign In</button></li>
-                <li><button>Sign Up</button></li>
+            <ul class="authentication">
+                <li><button class="btn ">Sign In</button></li>
+                <li><button class="btn btn-outline">Sign Up</button></li>
             </ul>
         </div>
     </header>

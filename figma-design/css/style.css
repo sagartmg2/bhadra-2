@@ -14,6 +14,11 @@ a {
     text-decoration: none;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -21,11 +26,16 @@ img {
 /* css-reset-end */
 
 /* variables */
+/* :root points html tag */
+:root {
+    --primary-color: #F54747;
+}
+
 
 
 /* typography */
 body {
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -52,7 +62,7 @@ header {
     font-weight: 500;
 }
 
-.font-bold{
+.font-bold {
     font-weight: 800;
 }
 
@@ -63,7 +73,55 @@ header {
 }
 
 .sidebar {
-    display: none;
+    background-color: orange;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 3rem;
+    transform: translateX(100%);
+    transition: transform 1s;
+}
+
+.sidebar.active {
+    transform: translateX(0%);
+}
+
+
+.btn {
+    border: 1px solid var(--primary-color);
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn:hover {
+    box-shadow: 5px 10px 26px -14px var(--primary-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color)
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: all .5s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.close-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: transparent;
 }
 
 .banner {
@@ -79,16 +137,17 @@ header {
 
 .banner button {
     margin-top: 1rem;
-    background-color: #F54747;
+    background-color: var(--primary-color);
     border-radius: .5rem;
-    color:white;
-    padding:1rem 3rem;
+    color: white;
+    padding: 1rem 3rem;
     border: transparent;
     transition: all .2s;
 
 }
+
 .banner button:hover {
-    box-shadow: 5px 10px 26px -14px #F54747;
+    box-shadow: 5px 10px 26px -14px var(--primary-color);
 }
 
 /* media query */
@@ -123,6 +182,34 @@ header {
     .container {
         max-width: 1024px;
     }
+
+    .hamburger-icon,
+    .close-icon {
+        display: none;
+    }
+
+    .sidebar {
+        position: static;
+        transform: none;
+        background-color: transparent;
+        padding: 0;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .sidebar .nav-links {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+
 }
 
 @media(min-width:1280px) {
